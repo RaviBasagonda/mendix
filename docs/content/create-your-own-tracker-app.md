@@ -35,7 +35,9 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Created a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
-![](Attachments/start-for-free.png)
+
+![start for free](docs/images/start-for-free.png)
+
 
 ## 3 Creating an app
 
@@ -44,8 +46,6 @@ To create an app, follow these steps:
 1. Sign in to your Mendix account.
 2. Click **Create App**.
 3. Hover the cursor over Tracker App template and click **Select Template** > **Select This Template**.
-
-![Select tracker app template](Content/Attachments/Select Tracker App Template.gif)
 
 ### 3.1 {Title of Sub-Section}
 
