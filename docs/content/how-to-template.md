@@ -1,39 +1,51 @@
 ---
-title: "Enter the title of the document"
-#category: "Enter the category under which the document should be published (for example, "Mobile"); if there is a parent, remove this category line"
-#parent: "Enter the parent document filename of this document if necessary (for example, "design-the-architecture"); if there is a category, remove this parent line"
-#menu_order: Enter the position of the document in the category or under the parent; number by 10 (for first), 20, 30, etc. for easy ordering of other documents in the future if necessary; don't add brackets or quotation marks; if no number is added, the system will add an extremely high number to order the documents, which means that if you only want a document to appear at the top, you only have to add "10" to that specific document, you don't have to order all the other documents in the category/under the parent
-#description: "Set a description with a maximum of 140 characters; this should describe what the goal of the document is, and it can be different from the document introduction; this is optional, and it can be removed"
-#tags: [Add a maximum of 5-7 tags/keywords; keep them focused on the most important topics of the document, and make sure the tag is used as a word in the actual content (will function best for SEO as a word in a heading); each tag should have quotation marks and be separated by a comma, for example: "Samba", "MxCloud", "cloud", "share"; the tags should be enclosed with brackets and quotation marks]
+title: "Create your own Tracker App in a browser using Mendix Studio"
+#category: "Apps"
+#parent: "Mendix"
+#menu_order: 10
+#description: "Describes how to create an app in a browser using Mendix Studio."
+#tags: ["studio", "apps", "create app", "how to"]
+#If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
 ## 1 Introduction
 
-{Describe what this how-to will cover and what the user will learn.}
+This how-to explains how you can create your own Tracker App in a browser using Mendix Studio. The Tracker App can be used for keeping track of everything from
+office supplies to warehouse stock.
+
+This how-to assumes the following use case:
+
+* You want to keep a track of parts that you use in your workshop to repair and maintain customer bikes 
+* You have a warehouse where you keep the parts in a specific location allocated for each part
+* You want to add a new part and edit the part details
+* You want to control the stock
 
 **This how-to will teach you how to do the following:**
 
-* Create...
-* Build...
-* Configure...
+* Create a Tracker App using a ready-made app template
+* Create and configure an action card in the app to open the parts list
+* Create and configure a page to display the parts list with part attributes
+* Create a new entity and add part attributes such as part name, code, stock, location, etc. This entity with part attributes acts as a data source for the pages you create.
+* Create and configure buttons and pages to add a new part, edit stock, and delete a part from the parts list
+* Create added functionalities such as search, sort, and filter for better user experience
 
 ## 2 Prerequisites
 
-{If there are no prerequisites, leave this section out}
-
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* {Prerequisite 1}
-* {Prerequisite 2}
+* Created a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
-## 3 {Title of Section Using Present Participle Verb/Gerund}
+![](Attachments/start-for-free.png)
 
-To {do this task}, follow these steps:
+## 3 Creating an app
 
-1. {Step 1}
-2. {Step 2}
+To create an app, follow these steps:
 
-![](attachments/{sub-folder with same name as doc file}/{image filename}.png)
+1. Sign in to your Mendix account.
+2. Click **Create App**.
+3. Hover the cursor over Tracker App template and click **Select Template** > **Select This Template**.
+
+![Select tracker app template](Content/Attachments/Select Tracker App Template.gif)
 
 ### 3.1 {Title of Sub-Section}
 
