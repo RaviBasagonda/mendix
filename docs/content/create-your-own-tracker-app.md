@@ -35,7 +35,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Have a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
-![start for free](docs/images/start-for-free.png)
+![start for free](docs/images/start-for-free.gif)
 
 ## 3 Creating a Tracker App and Editing in Mendix Studio
 
@@ -44,8 +44,12 @@ To create and edit a Tracker app, follow these steps:
 1. Sign in to your Mendix account.
 2. Click **Create App**.
 3. Scroll down to locate the Tracker app template.
-4. Hover over the Tracker app template and click **Select Template** > **Select This Template**.
-5. Click **Edit in Studio**. Now the Home page of Tracker app opens in Mendix Studio.
+4. Hover over the Tracker app template and click **Select Template** > **Select This Template**:
+![select tracker app template](docs/images/select-tracker-app-template.gif)
+
+5. Click **Edit in Studio**.
+
+Now the Home page of Tracker app opens in Mendix Studio.
 
 ## 3 Create and Configure an Action Card on the Home Page
 
