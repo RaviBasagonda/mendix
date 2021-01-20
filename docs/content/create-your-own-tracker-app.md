@@ -1,5 +1,5 @@
 ---
-title: "Create your own Tracker App in a browser using Mendix Studio"
+title: "Create your own Tracker app in a browser using Mendix Studio"
 #category: "Apps"
 #parent: "Mendix"
 #menu_order: 10
@@ -10,7 +10,7 @@ title: "Create your own Tracker App in a browser using Mendix Studio"
 
 ## 1 Introduction
 
-This how-to explains how you can create your own Tracker App in a browser using Mendix Studio. The Tracker App can be used for keeping track of everything from
+This how-to explains how you can create your own Tracker app in a browser using Mendix Studio. The Tracker app can be used for keeping track of everything from
 office supplies to warehouse stock.
 
 This how-to assumes the following use case:
@@ -22,8 +22,8 @@ This how-to assumes the following use case:
 
 **This how-to will teach you how to do the following:**
 
-* Create a Tracker App using a ready-made app template
-* Create and configure an action card in the app to open the parts list
+* Create a Tracker app using a an app template and edit in Mendix Studio
+* Create and configure an action card on the Home page to open the parts list
 * Create and configure a page to display the parts list with part attributes
 * Create a new entity and add part attributes such as part name, code, stock, location, etc. This entity with part attributes acts as a data source for the pages you create.
 * Create and configure buttons and pages to add a new part, edit stock, and delete a part from the parts list
@@ -33,19 +33,26 @@ This how-to assumes the following use case:
 
 Before starting this how-to, make sure you have completed the following prerequisites:
 
-* Created a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
-
+* Have a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
 ![start for free](docs/images/start-for-free.png)
 
+## 3 Creating a Tracker App and Editing in Mendix Studio
 
-## 3 Creating an app
-
-To create an app, follow these steps:
+To create and edit a Tracker app, follow these steps:
 
 1. Sign in to your Mendix account.
 2. Click **Create App**.
-3. Hover the cursor over Tracker App template and click **Select Template** > **Select This Template**.
+3. Scroll down to locate the Tracker app template.
+4. Hover over the Tracker app template and click **Select Template** > **Select This Template**.
+5. Click **Edit in Studio**. Now the Home page of Tracker app opens in Mendix Studio.
+
+## 3 Create and Configure an Action Card on the Home Page
+
+To create and configure an action card, follow these steps:
+
+1. 
+2.
 
 ### 3.1 {Title of Sub-Section}
 
