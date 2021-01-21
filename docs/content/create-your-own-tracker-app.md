@@ -22,7 +22,7 @@ This how-to assumes the following use case:
 
 **This how-to will teach you how to do the following:**
 
-* Create a Tracker app using an app template and edit in Mendix Studio
+* Create a Tracker app using an app template and edit in Mendix Studio (see [3](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#3-creating-a-tracker-app-and-editing-in-mendix-studio))
 * Create and configure an action card on the Home page to open the parts list
 * Create and configure a page to display the parts list with part attributes
 * Create a new entity and add part attributes such as part name, code, stock, location, etc. This entity with part attributes acts as a data source for the pages you create.
