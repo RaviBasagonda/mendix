@@ -36,7 +36,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Have a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
-![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/start-for-free.gif?raw=true)
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/2/start-for-free.gif?raw=true)
 
 ## 3 Creating a Tracker App and Start Editing in Mendix Studio
 
@@ -44,19 +44,19 @@ To create and edit a Tracker app, follow these steps:
 
 1. Sign in to your Mendix account.
 2. Click **Create App**.
-3. Scroll down to locate the **Tracker** app template.
-4. Hover over the **Tracker** app template and click **Select Template** > **Select This Template**.
+3. Scroll down to locate the **Tracker** app template, hover over the **Tracker** app template, and click **Select Template** > **Select This Template**.
 
-![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/select-tracker-app-template.gif?raw=true)
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/select-tracker-template.gif?raw=true)
 
-5. Choose a name, background color, and an icon for your app.
-6. Click **Create App**.
+5. Choose a name, background color, an icon for your app, and click **Create App**.
+
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/choose-name-create-app.gif?raw=true)
 
 Once the app is created, you will be directed to the Buzz space where you can share your app and start discussions related to your app.
 
 6. Click **Edit in Studio**.
 
-![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/edit-in-studio.gif?raw=true)
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/edit-in-studio.gif)
 
 Now the Home page of Tracker app opens in Mendix Studio for editing.
 
@@ -64,8 +64,7 @@ Now the Home page of Tracker app opens in Mendix Studio for editing.
 
 The user interface and user interaction elements of a page in your app can be created using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access Widgets and Building Blocks and go to the **Properties** tab to configure a funtionality or an appearance of a widget.
 
-For more information about **Pages** in Mendix Studio, refer [Pages](https://docs.mendix.com/studio/page-editor).
-For more information about **Widgets** in Mendix Studio, refer [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
+For more information, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
 ### 4.1 Creating an Action Card
 
@@ -73,7 +72,7 @@ To create an action card, follow these steps:
 
 1. Go to the **Toolbox** tab and search for *cards*.
 2. Choose an action card:
-   2a. In the **Cards** section, click and grab the **Card Action** card, and drag and drop it at the bottom of the Home page.
+   2. In the **Cards** section, click and grab the **Card Action** card, and drag and drop it at the bottom of the Home page.
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
 
@@ -82,27 +81,27 @@ To create an action card, follow these steps:
 To configure an action card, follow these steps:
 
 1. Choose an icon:
-   1a. Click the icon in the action card, go to the **Properties** tab > **General** section > **Icon**.
+   1. Click the icon in the action card, go to the **Properties** tab > **General** section > **Icon**.
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/select-icon-action-card.gif?raw=true)
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/select-icon-action-card.gif?raw=true)
    
 2. Choose a caption:
-   2a. Click the caption in action card, go to the **Properties** tab > **General** section > **Caption**.
+   2. Click the caption in action card, go to the **Properties** tab > **General** section > **Caption**.
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/choose-caption-action-card.gif?raw=true)
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
 3. Choose an event:
-   3a. Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** and choose **Page**.
+   3. Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** and choose **Page**.
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/choose-event.gif?raw=true)
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
    
 4. Configure the event:
-   4a. In the **Events** section, click the **Page** field.
-   4b. In the **Select Page** window, click **New page**.
-   4c. In the **Create new page** window, create a new page titled *Parts* and choose a **Layout**.
-   4d. In the left pane, choose **Lists** > **List Default**.
+   4. In the **Events** section, click the **Page** field.
+   4. In the **Select Page** window, click **New page**.
+   4. In the **Create new page** window, create a new page titled *Parts* and choose a **Layout**.
+   4. In the left pane, choose **Lists** > **List Default**.
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/configure-event.gif?raw=true)
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/configure-event.gif?raw=true)
 
 ## 4 Read More
 
