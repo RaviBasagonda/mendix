@@ -72,7 +72,7 @@ To create an action card, follow these steps:
 
 1. Go to the **Toolbox** tab and search for *cards*.
 2. Choose an action card:
-   2. In the **Cards** section, click and grab the **Card Action** card, and drag and drop it at the bottom of the Home page.
+   * In the **Cards** section, click and grab the **Card Action** card, and drag and drop it at the bottom of the Home page.
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
 
@@ -81,25 +81,25 @@ To create an action card, follow these steps:
 To configure an action card, follow these steps:
 
 1. Choose an icon:
-   1. Click the icon in the action card, go to the **Properties** tab > **General** section > **Icon**.
+   * Click the icon in the action card, go to the **Properties** tab > **General** section > **Icon**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/select-icon-action-card.gif?raw=true)
    
 2. Choose a caption:
-   2. Click the caption in action card, go to the **Properties** tab > **General** section > **Caption**.
+   * Click the caption in action card, go to the **Properties** tab > **General** section > **Caption**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
 3. Choose an event:
-   3. Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** and choose **Page**.
+   * Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** and choose **Page**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
    
 4. Configure the event:
-   4. In the **Events** section, click the **Page** field.
-   4. In the **Select Page** window, click **New page**.
-   4. In the **Create new page** window, create a new page titled *Parts* and choose a **Layout**.
-   4. In the left pane, choose **Lists** > **List Default**.
+   * In the **Events** section, click the **Page** field.
+   * In the **Select Page** window, click **New page**.
+   * In the **Create new page** window, create a new page titled *Parts* and choose a **Layout**.
+   * In the left pane, choose **Lists** > **List Default**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/configure-event.gif?raw=true)
 
