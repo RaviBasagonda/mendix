@@ -22,12 +22,13 @@ This how-to assumes the following use case:
 
 **This how-to will teach you how to do the following:**
 
-* Create a Tracker app using a an app template and edit in Mendix Studio
+* Create a Tracker app using an app template and edit in Mendix Studio
 * Create and configure an action card on the Home page to open the parts list
 * Create and configure a page to display the parts list with part attributes
 * Create a new entity and add part attributes such as part name, code, stock, location, etc. This entity with part attributes acts as a data source for the pages you create.
-* Create and configure buttons and pages to add a new part, edit stock, and delete a part from the parts list
-* Create added functionalities such as search, sort, and filter for better user experience
+* Create and configure buttons, pages, and microflows to add a new part, edit stock, and delete a part from the parts list
+* Create functionalities such as search, sort, and filter for better user experience
+* Publish the Tracker app
 
 ## 2 Prerequisites
 
@@ -43,24 +44,38 @@ To create and edit a Tracker app, follow these steps:
 
 1. Sign in to your Mendix account.
 2. Click **Create App**.
-3. Scroll down to locate the Tracker app template.
-4. Hover over the Tracker app template and click **Select Template** > **Select This Template**:
+3. Scroll down to locate the **Tracker** app template.
+4. Hover over the **Tracker** app template and click **Select Template** > **Select This Template**:
+
 ![select tracker app template](docs/images/select-tracker-app-template.gif)
 
 5. Click **Edit in Studio**.
 
-Now the Home page of Tracker app opens in Mendix Studio.
+Now the Home page of Tracker app opens in Mendix Studio for editing.
 
-## 3 Create and Configure an Action Card on the Home Page
+## 4 Creating and Configuring an Action Card on the Home Page
 
-To create and configure an action card, follow these steps:
+The user interface and user interaction elements of a page in an app can be created using Widgets and Building Blocks (set of widgets). Go to the Toolbox tab to access the Widgets and Building Blocks, and go to the Properties tab to configure a funtionality or an appearance of a widget. For more information, refer [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
-1. 
-2.
+### 4.1 Creating an Action Card
 
-### 3.1 {Title of Sub-Section}
+To create an action card, follow these steps:
 
-{Use sub-sections for more detail.}
+1. Go to the **Toolbox** tab and search for *cards*.
+2. Grab **Card Action**, drag, and drop it at the bottom of the page.
+![create action card](docs/images/create-action-card.gif)
+
+### 4.2 Configuring an Action Card
+
+To configure an action card, follow these steps:
+
+1. Click the icon in the action card, go to the **Properties** tab, and choose an **Icon**.
+2. Click the caption of the action card, go to the **Properties** tab, and type a **Caption**.
+3. Click the action card, go to the **Properties** tab, and choose **Page** as an event.
+4. Click the **Page** field to select the page displaying parts list. 
+5. In the **Select Page** window, click **New page**.
+6. In the **Create new page** window, create a new page titled *Parts* and choose a **Layout**.
+7. 
 
 ## 4 Read More
 
