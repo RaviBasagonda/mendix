@@ -36,7 +36,7 @@ Before starting this how-to, make sure you have completed the following prerequi
 
 * Have a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
-![start for free](docs/images/start-for-free.gif)
+![start for free](docs/images/start-for-free.png)
 
 ## 3 Creating a Tracker App and Editing in Mendix Studio
 
