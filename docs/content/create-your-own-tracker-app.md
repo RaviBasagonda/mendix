@@ -23,12 +23,13 @@ This how-to assumes the following use case:
 **This how-to will teach you how to do the following:**
 
 * Create a Tracker app and start editing in Mendix Studio (see section [3](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#3-creating-a-tracker-app-and-editing-in-mendix-studio))
-* Configure an action card and create a new page for displaying the parts list (see section [4](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#4-configuring-an-action-card-and-creating-a-new-page-for-parts-list))
-* Configure the new page
+* Configure an action card on the Home page to open the parts list
+* Create a new page for displaying the parts list (see section [4](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#4-configuring-an-action-card-and-creating-a-new-page-for-parts-list))
+* Configure a new page
 * Create an entity and add part attributes. This entity with part attributes acts as a data source for the pages you create.
 * Create and configure buttons, pages, and microflows to add a new part, edit stock, and delete a part from the parts list
 * Create features such as search, sort, and filter for better user experience
-* Publish the Tracker app
+* Resolve errors, preview, and publish the Tracker app
 
 ## 2 Prerequisites
 
@@ -54,15 +55,13 @@ To create and edit a Tracker app, follow these steps:
 
 Once the app is created, you will be directed to the app Buzz space, where you can share your app and start discussions related to your app.
 
-6. Click **Edit in Studio**.
+6. Click **Edit in Studio**. The *Home* page of Tracker app opens in Mendix Studio for editing.
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/edit-in-studio.gif)
 
-Now the *Home* page of Tracker app opens in Mendix Studio for editing.
-
 ## 4 Configuring an Action Card and Creating a New Page for the Parts List
 
-The User Interface (UI) and user interaction elements of a page in your app can be configured using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. To get yourself familiarized with pages and widgets in Mendix Studio, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
+The User Interface (UI) and user interaction elements of a page in your app can be configured using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. To get yourself familiarize with pages and widgets in Mendix Studio, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
 ### 4.1 Configuring an Action Card on the Home Page
 
@@ -99,9 +98,7 @@ To create the *Parts* page, follow these steps:
 1. In the **Events** section, click the **Page** field to select a page.
 2. In the **Select Page** window, click **New Page**.
 3. In the **Create new page** window, create a new page titled *Parts*, and choose a **Layout**.
-4. In the left pane, choose **Lists** > **List Default**.
-   
-Now a new page titled *Parts* has been created for displaying the parts list.
+4. In the left pane, choose **Lists** > **List Default**. A new page titled *Parts* will be created.
    
 ## 5 Configuring the Parts Page UI and User Interaction Elements
 
@@ -146,12 +143,36 @@ To configure the *Parts* page UI, follow these steps:
 6. Add a back button at the top left corner to go back to your app *Home* page:
    * Copy and paste an existing button, change the caption as *Back*, drag and drop it inside the row at top left corner, and go to the **Properties** tab to configure the design, appearance, and spacing.
    
-Now the configured *Parts* page may look similar to the following UI page:
+The configured *Parts* page may look similar to the following UI page:
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-page.png?raw=true)
    
 ### 5.2 Configuring the User Interaction Elements
 
-The user interaction elements such as new, edit, delete, search, sort, and filter in your app will not work without action events and a data source to interact with and feed data to the *Parts* page. The data source for the page can be created by creating an entity with attributes in the **Domain Models** module in the Mendix Studio. To get yourself familiarized with domain models, entity, and attributes, refer [Domain Model](https://docs.mendix.com/studio/domain-models).
+The user interaction elements such as new, edit, delete, search, sort, and filter in your app will not work without action events and a data source to interact with and feed data to the *Parts* page. The data source for a page can be created by creating an entity with attributes in the **Domain Models** module in the Mendix Studio. To get yourself familiarize with domain models, entity, and attributes, refer [Domain Model](https://docs.mendix.com/studio/domain-models).
+
+#### 5.2.1 Creating the Parts Entity and Attributes
+
+To create the *Parts* entity and attributes, follow these steps:
+
+1. Go to the **Domain Models** window in Mendix Studio: 
+   * Click the **Domain Models** icon in the left menu bar and select **AssetManager**.
+   
+2. Create an entity named *Parts*:
+   * Go to the **Toolbox** tab, drag and drop **Entity** inside the main window, and name it **Parts**.
+
+3. Create and configure attributes:
+   * Click **New attribute** to create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.
+   {{% alert type="info" %}} The name of an attribute should start with a letter and can only contain letters, digits, and underscores. {{% /alert %}}
+   
+   * Click an attribute and go to the **Properties** tab to configure the attribute properties.
+   
+4. Ensure that the *Parts* entity is persistable (refer [Persistability](https://docs.mendix.com/refguide/persistability)): 
+   * Click at the top of **Parts** entity, go to the **Properties** tab, and make sure the **Persistable** switch is turned on.
+   
+The created *Parts* entity may look similar to the following entity:
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-entity.png?raw=true)
+
+#### 5.2.2 Configuring the Action Events for User Interaction
 
 ## 4 Read More
 
