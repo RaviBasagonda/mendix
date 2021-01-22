@@ -144,6 +144,7 @@ To configure the *Parts* page UI, follow these steps:
    * Copy and paste an existing button, change the caption as *Back*, drag and drop it inside the row at top left corner, and go to the **Properties** tab to configure the design, appearance, and spacing.
    
 The configured *Parts* page may look similar to the following UI page:
+
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-page.png?raw=true)
    
 ### 5.2 Configuring the User Interaction Elements
@@ -162,6 +163,7 @@ To create the *Parts* entity and attributes, follow these steps:
 
 3. Create and configure attributes:
    * Click **New attribute** to create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.
+   
    {{% alert type="info" %}} The name of an attribute should start with a letter and can only contain letters, digits, and underscores. {{% /alert %}}
    
    * Click an attribute and go to the **Properties** tab to configure the attribute properties.
@@ -170,6 +172,7 @@ To create the *Parts* entity and attributes, follow these steps:
    * Click at the top of **Parts** entity, go to the **Properties** tab, and make sure the **Persistable** switch is turned on.
    
 The created *Parts* entity may look similar to the following entity:
+
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-entity.png?raw=true)
 
 #### 5.2.2 Configuring the Action Events for User Interaction
