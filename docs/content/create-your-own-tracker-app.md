@@ -112,22 +112,22 @@ To configure the *Parts* page UI, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/edit-texts-button-captions.gif?raw=true)
    
-5. Add or delete rows or columns for rearranging UI elements, if necessary:
-   a. Click an UI element and go to the breadcrumb bar displayed at the left bottom corner.
+5. Add or delete rows or columns for rearranging UI elements, if necessary:<br/>
+   a. Click an UI element and go to the breadcrumb bar displayed at the left bottom corner.<br/>
    b. Click **Row** or **Column** to access the **Add Row** and **Add Column** buttons.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/add-rows-columns.gif?raw=true)
    
-6. Rearrange the **New** button and configure the spacing or alignment, if necessary:
-   a. Drag and drop the **New** button inside a column next to the title.
+6. Rearrange the **New** button and configure the spacing or alignment, if necessary:<br/>
+   a. Drag and drop the **New** button inside a column next to the title.<br/>
    b. Go to the **Properties** tab > **Design** section to configure the spacing or alignment.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/rearrange-button.gif?raw=true)
 
-7. Add UI elements for deleting, searching, sorting, and filtering parts from the parts list:
-   a. Copy and paste an existing button to create the delete button and go to the **Properties** tab to configure the design, appearance, and spacing.
-   b. Add a column below the page title, go to the **Toolbox** tab, search for *search* widget, and drag and drop the **Text box search** widget inside the column.
-   c. Add a column below the search box, go to the **Toolbox** tab, search for *sort* widget, and drag and drop the **Drop down sort** widget inside the column.
+7. Add UI elements for deleting, searching, sorting, and filtering parts from the parts list:<br/>
+   a. Copy and paste an existing button to create the delete button and go to the **Properties** tab to configure the design, appearance, and spacing.<br/>
+   b. Add a column below the page title, go to the **Toolbox** tab, search for *search* widget, and drag and drop the **Text box search** widget inside the column.<br/>
+   c. Add a column below the search box, go to the **Toolbox** tab, search for *sort* widget, and drag and drop the **Drop down sort** widget inside the column.<br/>
    d. Add a column right to the sort box, go to the **Toolbox** tab, search for *filter* widget, and drag and drop the **Drop down filter** widget inside the column.
    
 6. Add a back button at the top left corner to go back to your app *Home* page: Copy and paste an existing button, change the caption as *Back*, drag and drop it inside the row at top left corner, and go to the **Properties** tab to configure the design, appearance, and spacing.
@@ -148,10 +148,10 @@ To create the *Parts* entity and attributes, follow these steps:
    
 2. Create an entity named *Parts*: Go to the **Toolbox** tab, drag and drop **Entity** inside the main window, and name it **Parts**.
 
-3. Create and configure attributes:
-   a. Click **New attribute** to create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.
+3. Create and configure attributes:<br/>
+   a. Click **New attribute** to create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.<br/>
    
-   {{% alert type="info" %}} The name of an attribute should start with a letter and can only contain letters, digits, and underscores. {{% /alert %}}
+   {{% alert type="info" %}} The name of an attribute should start with a letter and can only contain letters, digits, and underscores. {{% /alert %}}<br/>
    
    b. Click an attribute and go to the **Properties** tab to configure the attribute properties.
    
