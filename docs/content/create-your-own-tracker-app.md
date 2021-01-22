@@ -25,9 +25,9 @@ This how-to assumes the following use case:
 * Create a Tracker app and start editing in Mendix Studio (see section [3](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#3-creating-a-tracker-app-and-editing-in-mendix-studio))
 * Configure an action card and create a new page for displaying the parts list (see section [4](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#4-configuring-an-action-card-and-creating-a-new-page-for-parts-list))
 * Configure the new page
-* Create a new entity and add part attributes. This entity with part attributes acts as a data source for the new page you create.
+* Create an entity and add part attributes. This entity with part attributes acts as a data source for the pages you create.
 * Create and configure buttons, pages, and microflows to add a new part, edit stock, and delete a part from the parts list
-* Create functionalities such as search, sort, and filter for better user experience
+* Create features such as search, sort, and filter for better user experience
 * Publish the Tracker app
 
 ## 2 Prerequisites
@@ -62,17 +62,14 @@ Now the *Home* page of Tracker app opens in Mendix Studio for editing.
 
 ## 4 Configuring an Action Card and Creating a New Page for the Parts List
 
-The User Interface (UI) and user interaction elements of a page in your app can be configured using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access Widgets and Building Blocks and go to the **Properties** tab to configure a funtionality or an appearance of a widget.
-
-For more information, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
+The User Interface (UI) and user interaction elements of a page in your app can be configured using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. For more information, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
 ### 4.1 Configuring an Action Card on the Home Page
 
 To configure an action card, follow these steps:
 
-1. Go to the **Toolbox** tab and search for *cards*.
-2. Choose an action card:
-   * In the **Cards** section, click and grab the **Card Action** card, and drag and drop it at the bottom of the *Home* page.
+1. Choose an action card:
+   * Go to the **Toolbox** tab, search for *cards*, and drag and drop the **Card Action** card at the bottom of the *Home* page.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
 
@@ -87,7 +84,7 @@ To configure an action card, follow these steps:
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
 5. Choose an event for the click action:
-   * Click the action card, go to the **Properties** tab > **Events** section > **On Click Action**, and choose **Page**.
+   * Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** field, and choose **Page**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
    
@@ -106,13 +103,15 @@ To create a new page, follow these steps:
    
 Now a new page titled *Parts* has been created for displaying the parts list.
    
-## 5 Configuring the Parts Page
+## 5 Configuring the Parts Page and User Interaction Elements
+
+### 5.1 Configuring the Parts Page
 
 To configure the *Parts* page, follow these steps:
 
 1. Open the *Parts* page (refer [Pages](https://docs.mendix.com/studio/page-editor)).
 2. Delete unnecessary UI elements:
-   * Click the element and press <kbd>Delete</kbd> or choose **Delete**.
+   * Click an UI element and press <kbd>Delete</kbd> or click **Delete**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/delete-elements.gif?raw=true)
    
@@ -121,27 +120,33 @@ To configure the *Parts* page, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/adjust-width-layout-grid.gif?raw=true)
    
-4. Edit texts and button captions, if necessary:
+4. Edit texts or button captions, if necessary:
    * Double-click a text or button caption to edit it.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/edit-texts-button-captions.gif?raw=true)
    
 5. Add or delete rows or columns for rearranging UI elements, if necessary:
-   * Click an UI element or button, go to the breadcrumb bar displayed at the left bottom corner.
+   * Click an UI element and go to the breadcrumb bar displayed at the left bottom corner.
    * Click **Row** or **Column** to access the **Add Row** and **Add Column** buttons.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/add-rows-columns.gif?raw=true)
    
-7. Rearrange an UI element and configure the spacing or alignment, if necessary:
-   * Click and grab an UI element, and drag and drop it into a row or column on the page to rearrange.
-   * Click an UI element and go to the **Properties** tab > **Design** section to configure the spacing or alignment.
+6. Rearrange the **New** button and configure the spacing or alignment, if necessary:
+   * Drag and drop the **New** button inside a column next to the title.
+   * Go to the **Properties** tab > **Design** section to configure the spacing or alignment.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/rearrange-button.gif?raw=true)
 
-6. Add UI elements for adding more features such as delete, search, sort, and filter parts from the parts list:
-   * Copy and paste an existing button to create a delete button and configure the design, appearance, and spacing.
+7. Add UI elements for deleting, searching, sorting, and filtering parts from the parts list:
+   * Copy and paste an existing button to create the delete button and go to the **Properties** tab to configure the design, appearance, and spacing.
+   * Add a column below the page title, go to the **Toolbox** tab, search for *search* widget, and drag and drop the **Text box search** widget inside the column.
+   * Add a column below the search box, go to the **Toolbox** tab, search for *sort* widget, and drag and drop the **Drop down sort** widget inside the column.
+   * Add a column right to the sort box, go to the **Toolbox** tab, search for *filter* widget, and drag and drop the **Drop down filter** widget inside the column.
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/add-button-space-align.gif?raw=true)
+   Now the configured the *Parts* page may look similar to the following:
+   
+### 5.2 Configuring the User Interaction Elements
+   
 
 ## 4 Read More
 
