@@ -45,17 +45,9 @@ To create and edit a Tracker app, follow these steps:
 
 1. Sign in to your Mendix account.
 2. Click **Create App**.
-3. Scroll down to locate the **Tracker** app template, hover over the **Tracker** app template, and click **Select Template** > **Select This Template**.
-
-![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/select-tracker-template.gif?raw=true)
-
-5. Choose a name, background color, an icon for your app, and click **Create App**.
-
-![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/choose-name-create-app.gif?raw=true)
-
-Once the app is created, you will be directed to the app *Buzz* space, where you can share your app and start discussions related to your app.
-
-6. Click **Edit in Studio**. The *Home* page of Tracker app opens in Mendix Studio for editing.
+3. Scroll down to locate the *Tracker* app template, hover the cursor over it , and click **Select Template** > **Select This Template**.
+5. Choose a name, background color, an icon for your app, and click **Create App**. Once the app is created, the app *Buzz* space will open.
+6. In the app *Buzz* space, click **Edit in Studio**. The *Home* page of Tracker app will open in Mendix Studio for editing.
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/edit-in-studio.gif)
 
@@ -67,20 +59,25 @@ The User Interface (UI) and user interaction elements of a page in your app can 
 
 To configure an action card, follow these steps:
 
-1. Choose an action card: Go to the **Toolbox** tab, search for *cards*, and drag and drop the **Card Action** card at the bottom of the *Home* page.
+1. Choose an action card:
+   * Go to the **Toolbox** tab > search for *cards* > drag and drop the **Card Action** card at the bottom of the *Home* page.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
 
-3. Choose an icon for the action card: Click the icon in the action card and go to the **Properties** tab > **General** section > **Icon**.
+3. Choose an icon for the action card:
+   * Click the icon in the action card and go to the **Properties** tab > **General** section > **Icon**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/select-icon-action-card.gif?raw=true)
    
-4. Choose a caption for the action card: Click the caption in action card and go to the **Properties** tab > **General** section > **Caption**.
+4. Choose a caption for the action card:
+   * Click the caption in action card and go to the **Properties** tab > **General** section > **Caption**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
-5. Choose an event for the click action: Click the action card, go to the **Properties** tab > **Events** section > **On Click Action**, and choose **Page**.
-Choosing the **Page** event will set an event to open the *Parts* page you will create and select in the next step.
+5. Choose an event for the click action:
+   * Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**.
+   
+   Choosing the **Page** event will set an event to open the *Parts* page you will create and select in the next step.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true) 
    
@@ -90,25 +87,29 @@ The Mendix Studio has ready-made page templates for creating app pages such as d
 
 To create the *Parts* page, follow these steps:
 
-1. In the **Events** section, click the **Page** field to select a page.
-2. In the **Select Page** window, click **New Page**.
-3. In the **Create new page** window, create a new page titled *Parts*, and choose a **Layout**.
-4. In the left pane, choose **Lists** > **List Default**. A new page titled *Parts* will be created.
+1. In the **Events** section, go to **Page** > click **Select page** to select a page.
+2. In the **Select Page** pop-up window, click **New Page**.
+3. In the **Create new page** pop-up window, create a new page titled *Parts*, and choose a **Layout**.
+4. In the left pane, choose **Lists** > **List Default**, and click **Create**. A new page titled *Parts* will be created.
    
 ## 5 Configuring the UI of Parts Page
 
 To configure the *Parts* page UI, follow these steps:
 
 1. Open the *Parts* page (refer [Pages](https://docs.mendix.com/studio/page-editor)).
-2. Delete unnecessary UI elements: Click an UI element and press <kbd>Delete</kbd> or click **Delete**.
+
+2. Delete unnecessary UI elements:
+   * Click an UI element and press <kbd>Delete</kbd> or click **Delete**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/delete-elements.gif?raw=true)
    
-3. Set the width of page layout, if necessary: Click the **Layout Grid** and choose **Full Width** or **Fixed Width**.
+3. Set the width of page layout, if necessary:
+   * Click the **Layout Grid**, go to the **Properties** tab > **General** section > choose **Full Width** or **Fixed Width**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/adjust-width-layout-grid.gif?raw=true)
    
-4. Edit texts or button captions, if necessary: Double-click a text or button caption to edit it.
+4. Edit texts or button captions, if necessary:
+   * Double-click a text or button caption to edit it.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/edit-texts-button-captions.gif?raw=true)
    
@@ -126,11 +127,14 @@ To configure the *Parts* page UI, follow these steps:
 
 7. Add UI elements for deleting, searching, sorting, and filtering parts from the parts list:<br/>
    a. Copy and paste an existing button to create the delete button and go to the **Properties** tab to configure the design, appearance, and spacing.<br/>
-   b. Add a column below the page title, go to the **Toolbox** tab, search for *search* widget, and drag and drop the **Text box search** widget inside the column.<br/>
-   c. Add a column below the search box, go to the **Toolbox** tab, search for *sort* widget, and drag and drop the **Drop down sort** widget inside the column.<br/>
-   d. Add a column right to the sort box, go to the **Toolbox** tab, search for *filter* widget, and drag and drop the **Drop down filter** widget inside the column.
+   b. Add a column below the page title, go to the **Toolbox** tab > search for *search* widget > drag and drop the **Text box search** widget inside the column.<br/>
+   c. Add a column below the search box, go to the **Toolbox** tab > search for *sort* widge > drag and drop the **Drop down sort** widget inside the column.<br/>
+   d. Add a column right to the sort box, go to the **Toolbox** tab > search for *filter* widget > drag and drop the **Drop down filter** widget inside the column.
    
-6. Add a back button at the top left corner to go back to your app *Home* page: Copy and paste an existing button, change the caption as *Back*, drag and drop it inside the row at top left corner, and go to the **Properties** tab to configure the design, appearance, and spacing.
+6. Add a back button at the top left corner to go back to the app *Home* page:<br/>
+   a. Copy and paste an existing button and rename it as *Back*.<br/>
+   b. Drag and drop it inside the row at top left corner.<br/>
+   c. Go to the **Properties** tab to configure the design, appearance, and spacing.
    
 The configured *Parts* page may look similar to the following UI page:
 
@@ -144,18 +148,22 @@ The user interaction elements such as new, edit, delete, search, sort, and filte
 
 To create the *Parts* entity and attributes, follow these steps:
 
-1. Go to the **Domain Models** window in Mendix Studio: Click the **Domain Models** icon in the left menu bar and select **AssetManager**.
+1. Go to the **Domain Models** window in Mendix Studio:
+   * Click the **Domain Models** icon in the left menu bar and select **AssetManager**.
    
-2. Create an entity named *Parts*: Go to the **Toolbox** tab, drag and drop **Entity** inside the main window, and name it **Parts**.
+2. Create an entity named *Parts*:
+   * Go to the **Toolbox** tab > drag and drop **Entity** inside the main window, and name it **Parts**.
 
-3. Create and configure attributes:<br/>
-   a. Click **New attribute** to create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.<br/>
+3. Create and configure attributes:
+
+   a. Click **New attribute** to create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.
    
-   {{% alert type="info" %}} The name of an attribute should start with a letter and can only contain letters, digits, and underscores. {{% /alert %}}<br/>
+   {{% alert type="info" %}} The name of an attribute should start with a letter and can only contain letters, digits, and underscores. {{% /alert %}}
    
    b. Click an attribute and go to the **Properties** tab to configure the attribute properties.
    
-4. Ensure that the *Parts* entity is persistable (refer [Persistability](https://docs.mendix.com/refguide/persistability)): Click at the top of **Parts** entity, go to the **Properties** tab, and make sure the **Persistable** switch is turned on.
+4. Ensure that the *Parts* entity is persistable (refer [Persistability](https://docs.mendix.com/refguide/persistability)):
+   * Click at the top of **Parts** entity, go to the **Properties** tab > **Persistable**, and make sure the switch is turned on.
    
 The created *Parts* entity may look similar to the following entity:
 
@@ -163,9 +171,47 @@ The created *Parts* entity may look similar to the following entity:
 
 ### 6.2 Configuring the Action Events for User Interaction
 
-To configure the action events for user interaction, follow these steps:
+#### 6.2.1 Configure an Event to Add a New Part to the Parts List:
 
-1. Configure the **New** button to add a new part to the parts list: Click the **New** button, go to the 
+To configure an event to add a new part to the parts list, follow these steps:
+
+1. Set an event:<br/>
+   a. Click the **New** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**.<br/>
+   b. In the **Events** section, turn-on the **Create Object** switch.
+
+2. Choose an entity for the parts data and a page to open and fill the part details:<br/>
+   a. Go to **Entity** > click **Select entity** > choose **Parts**.<br/>
+   c. Go to **Page** > click **Select page** to select a page.<br/>
+   d. In the **Select Page** pop-up window, click **New Page**.<br/>
+   e. In the **Create new page** pop-up window, create a new page titled *Part details*, and choose **PopupLayout** from the **Layout** drop-down list.<br/>
+   f. Ensure that the checkbox *Pre-fill page contents based on the Parts entity* is selected. This will pre-fill the form contents with the part attributes you have created in the *Parts* entity.<br/>
+   f. Choose **Form Horizontal** and click **Create**.
+   
+   A new pop-up page titled *Part details* will be created.
+
+3. Configure the contents inside the *Part details* page:<br/>
+   a. Ensure that the data source for contents inside the page is set as **Context**:<br/>
+   
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/part-details-page-data-source.gif?raw=true)
+   
+   b. Set the **Name** text box as required to make the part name attribute as necessary to add to the parts list:<br/>
+      * Click the **Name** text box, go to the **Properties** tab > **Input Validation** section > **Validation Type** > choose **Required**.
+      
+   c. Configure other properties such as design, appearance, spacing, and alignment, if necessary.
+   
+4. Ensure that the **Cancel** button event in the **Properties** tab > **Events** section is set to the following:
+   * **On Click Action** is set to **More**.
+   * **Action** is set to **Cancel Changes**.
+      
+5. Configure the **Save** button to display a confirmation message for adding new part to the parts list:<br/>
+   a. Click the **Save** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Microflow**.<br/>
+   c. In the **Events** section, go to **Microflow** > click **Select microflow**.<br/>
+   d. In the **Select Microflow** pop-up window, click **New Microflow**.<br/>
+   e. In the **Create new microflow** pop-up window, create a new microflow named *AddEditPart* and click **Create**. The *AddEditPart* microflow will open in the **Microflows** window in Mendix Studio.
+   
+#### 6.2.2 Configure a Microflow
+
+To configure the *AddEditPart* microflow, follow these steps:
 
 ## 4 Read More
 
