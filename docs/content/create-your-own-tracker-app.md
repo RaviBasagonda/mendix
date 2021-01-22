@@ -62,7 +62,7 @@ Now the *Home* page of Tracker app opens in Mendix Studio for editing.
 
 ## 4 Configuring an Action Card and Creating a New Page for the Parts List
 
-The User Interface (UI) and user interaction elements of a page in your app can be configured using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. For more information, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
+The User Interface (UI) and user interaction elements of a page in your app can be configured using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. To get yourself familiarized with pages and widgets in Mendix Studio, refer [Pages](https://docs.mendix.com/studio/page-editor) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
 ### 4.1 Configuring an Action Card on the Home Page
 
@@ -88,13 +88,13 @@ To configure an action card, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
    
-   Choosing the **Page** event will set an event to open the page you will create and select in the next step. 
+   Choosing the **Page** event will set an event to open the *Parts* page you will create and select in the next step. 
    
-### 4.2 Creating a New Page for the Parts List
+### 4.2 Creating the Parts Page for Parts List
 
 The Mendix Studio has ready-made page templates for creating app pages such as dashboards, forms, lists, etc. You can use a page template and configure it accoording to your needs and design.
 
-To create a new page, follow these steps:
+To create the *Parts* page, follow these steps:
 
 1. In the **Events** section, click the **Page** field to select a page.
 2. In the **Select Page** window, click **New Page**.
@@ -103,11 +103,11 @@ To create a new page, follow these steps:
    
 Now a new page titled *Parts* has been created for displaying the parts list.
    
-## 5 Configuring the Parts Page and User Interaction Elements
+## 5 Configuring the Parts Page UI and User Interaction Elements
 
-### 5.1 Configuring the Parts Page
+### 5.1 Configuring the Parts Page UI
 
-To configure the *Parts* page, follow these steps:
+To configure the *Parts* page UI, follow these steps:
 
 1. Open the *Parts* page (refer [Pages](https://docs.mendix.com/studio/page-editor)).
 2. Delete unnecessary UI elements:
@@ -143,10 +143,15 @@ To configure the *Parts* page, follow these steps:
    * Add a column below the search box, go to the **Toolbox** tab, search for *sort* widget, and drag and drop the **Drop down sort** widget inside the column.
    * Add a column right to the sort box, go to the **Toolbox** tab, search for *filter* widget, and drag and drop the **Drop down filter** widget inside the column.
    
-   Now the configured the *Parts* page may look similar to the following:
+6. Add a back button at the top left corner to go back to your app *Home* page:
+   * Copy and paste an existing button, change the caption as *Back*, drag and drop it inside the row at top left corner, and go to the **Properties** tab to configure the design, appearance, and spacing.
+   
+Now the configured *Parts* page may look similar to the following UI page:
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-page.png?raw=true)
    
 ### 5.2 Configuring the User Interaction Elements
-   
+
+The user interaction elements such as new, edit, delete, search, sort, and filter in your app will not work without action events and a data source to interact with and feed data to the *Parts* page. The data source for the page can be created by creating an entity with attributes in the **Domain Models** module in the Mendix Studio. To get yourself familiarized with domain models, entity, and attributes, refer [Domain Model](https://docs.mendix.com/studio/domain-models).
 
 ## 4 Read More
 
