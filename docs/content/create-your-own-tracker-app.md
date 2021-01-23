@@ -382,8 +382,7 @@ To configure the filter feature for filtering parts from the list, follow these 
       * **Caption** - enter *Filter stock reached safety stock*
       * **Filter** - choose **XPath**
       * **Attribute** - choose **Stock**
-      * **XPath Constraint** - add condition where attribute value of **Stock** is equal to attribute value of **SafetyStock**.
-      * **XPath Constraint** - add condition where attribute value of **Stock** is less than the attribute value of **SafetyStock**.
+      * **XPath Constraint** - add condition where attribute value of **Stock** is less than or equal to attribute value of **SafetyStock**.
       * Click **Done*
       
 ### 6.9 Configuring Contents in the Parts List
