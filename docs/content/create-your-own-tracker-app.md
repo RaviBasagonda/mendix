@@ -107,8 +107,9 @@ To configure the UI elements of *Parts* page, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/adjust-width-layout-grid.gif?raw=true)
    
-4. Edit texts or button captions, if necessary:
-   * Double-click a text or button caption to edit it.
+4. Edit texts or button captions, if necessary:<br/>
+
+   a. Double-click a text or button caption to edit it.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/edit-texts-button-captions.gif?raw=true)
    
@@ -144,7 +145,11 @@ To configure the UI elements of *Parts* page, follow these steps:
    
    b. Drag and drop it inside the row at top left corner.<br/>
    
-   c. Go to the **Properties** tab to configure the design, appearance, and spacing.
+   c. Click the **Back** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page** > click **Select page**.<br/>
+   
+   d. In the **Select Page** pop-up window, choose the **Home** page.<br/>
+   
+   e. Configure the design, appearance, and spacing, if necessary.
    
 The configured page titled *Parts* may look similar to the following UI page:
 
@@ -368,18 +373,33 @@ To configure the filter feature for filtering parts from the list, follow these 
    
    c. Repeat the step *a* and in the **Add Object Property** pop-up window, do the following:
       * **Caption** - enter *Filter empty stock*
-      * **Filter** - choose **Attribute**
+      * **Filter** - choose **XPath**
       * **Attribute** - choose **Stock**
-      * **Attribute Value** - enter **0**
+      * **XPath Constraint** - add condition where attribute value of **Stock** is equal to **0**.
       * Click **Done**
       
    d. Repeat the step *a* and in the **Add Object Property** pop-up window, do the following:
       * **Caption** - enter *Filter stock reached safety stock*
       * **Filter** - choose **XPath**
       * **Attribute** - choose **Stock**
-      * **XPath Constraint** - add condition where attribute value of *Stock* is equal to attribute value of *SafetyStock*.
+      * **XPath Constraint** - add condition where attribute value of **Stock** is equal to attribute value of **SafetyStock**.
+      * **XPath Constraint** - add condition where attribute value of **Stock** is less than the attribute value of **SafetyStock**.
       * Click **Done*
+      
+### 6.9 Configuring Contents in the Parts List
+
+To configure contents in the parts list for displaying the part attributes, follow these steps:
+
+1. In the parts list, click the **Name** text, go to the **Properties** tab > **General** section > **Content** > delete the *Name* text > click **Add attribute**.<br/>
    
+2. In the **Select Attribute** pop-up window, choose the **Name** attribute to display.<br/>
+   
+3. In the parts list, click the **Stock:** text and choose the **Stock** attribute to display.<br/>
+
+Now the configured *Parts* page may look similar to the following UI page:
+
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/parts-page-complete.png?raw=true)
+
 ## 4 Read More
 
 * {Link 1}
