@@ -51,44 +51,43 @@ To create and edit the Tracker app, follow these steps:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/edit-in-studio.gif)
 
-## 4 Configuring an Action Card and Creating a New Page for the Parts List
+## 4 Configuring an Action Card and Creating the Parts Page
 
 You can configure the User Interface (UI) and user interaction elements of a page in your app using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. To get yourself familiarize with *Pages* and *Widgets* in Mendix Studio, refer [Pages](https://docs.mendix.com/studio-how-to/pages) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
-### 4.1 Configuring an Action Card on the Home Page
+To configure an action card and create the *Parts* page, follow these steps:
 
-To configure an action card, follow these steps:
-
-1. Choose an action card:
+1. In the *Home* page, choose an action card:
    * Go to the **Toolbox** tab > search for *cards* > drag and drop the **Card Action** card at the bottom of the *Home* page.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
 
 3. Choose an icon for the action card:
-   * Click the icon in the action card and go to the **Properties** tab > **General** section > **Icon**.
+   * Select the icon in the action card and go to the **Properties** tab > **General** section > **Icon**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/select-icon-action-card.gif?raw=true)
    
 4. Choose a caption for the action card:
-   * Click the caption in action card and go to the **Properties** tab > **General** section > **Caption** > enter *Parts* as caption.
+   * Select the **Open Page** caption in the action card and go to the **Properties** tab > **General** section > **Caption** > enter *Parts*.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
 5. Choose an event for the click action:
-   * Click the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. Choosing the **Page** event will set an event to open the *Parts* page you will create and select in the next step.
+   * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. Choosing the **Page** event will set an action to open the *Parts* page you will create in the next step.
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true) 
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
+
+6. Create the *Parts* page:<br/>
+
+   a. In the **Events** section, go to **Page** > click **Select page**.<br/>
    
-### 4.2 Creating a Page for the Parts List
-
-The Mendix Studio has ready-made page templates for creating the app pages such as dashboards, forms, lists, etc. You can use a page template and configure it accoording to your needs and UI design.
-
-To create a page for displaying the parts list, follow these steps:
-
-1. In the **Events** section, go to **Page** > click **Select page**.
-2. In the **Select Page** pop-up window, click **New Page**.
-3. In the **Create new page** pop-up window, create a new page titled *Parts*, and choose a **Layout**.
-4. In the left pane, choose **Lists** > **List Default**, and click **Create**. A new page titled *Parts* will be created.
+   b. In the **Select Page** pop-up window, click **New Page**.<br/>
+   
+   c. In the **Create new page** pop-up window, do the following:
+      * **Title**  - enter *Parts*
+      * **Layout** - choose **Atlas_Default**
+      * In the left pane, choose **Lists** > **List Default**
+      * Click **Create**.
    
 ## 5 Configuring the UI Elements of Parts Page
 
@@ -98,26 +97,25 @@ To configure the UI elements of *Parts* page, follow these steps:
    * Click the **Pages** icon in the left menu bar and select **Parts**.
 
 2. Delete unnecessary UI elements:
-   * Click an UI element and press <kbd>Delete</kbd> or click **Delete**.
+   * Select an UI element and press <kbd>Delete</kbd> or click **Delete**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/delete-elements.gif?raw=true)
    
 3. Set the width of page layout, if necessary:
-   * Click the **Layout Grid**, go to the **Properties** tab > **General** section > choose **Full Width** or **Fixed Width**.
+   * Select the **Layout Grid**, go to the **Properties** tab > **General** section > choose **Full Width** or **Fixed Width**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/adjust-width-layout-grid.gif?raw=true)
    
-4. Edit texts or button captions, if necessary:<br/>
-
-   a. Double-click a text or button caption to edit it.
+4. Edit texts or button captions, if necessary:
+   * Double-click a text or button caption to edit it.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/edit-texts-button-captions.gif?raw=true)
    
 5. Add or delete rows or columns for rearranging the UI elements, if necessary:<br/>
 
-   a. Click an UI element and go to the breadcrumb bar displayed at the left bottom corner.<br/>
+   a. Select an UI element and go to the breadcrumb bar displayed at the left bottom corner.<br/>
    
-   b. Click **Row** or **Column** to access the **Add Row** and **Add Column** buttons.
+   b. Click **Row** or **Column** to access the **Add Row** and **Add Column** buttons.<br/>
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/add-rows-columns.gif?raw=true)
    
@@ -139,19 +137,13 @@ To configure the UI elements of *Parts* page, follow these steps:
    
    d. Add a column right to the sort box, go to the **Toolbox** tab > search for *filter* widget > drag and drop the **Drop down filter** widget inside the column.
    
-8. Add a back button for going back to the app *Home* page:<br/>
+8. Add a back button for going back to the *Home* page:<br/>
 
    a. Copy and paste an existing button and rename it as *Back*.<br/>
    
-   b. Drag and drop it inside the row at top left corner.<br/>
+   b. Drag and drop it inside the row at top left corner and configure the design, appearance, and spacing, if necessary.<br/>
    
-   c. Click the **Back** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page** > click **Select page**.<br/>
-   
-   d. In the **Select Page** pop-up window, choose the **Home** page.<br/>
-   
-   e. Configure the design, appearance, and spacing, if necessary.
-   
-The configured page titled *Parts* may look similar to the following UI page:
+The configured *Parts* page may look similar to the following UI page:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-page.png?raw=true)
    
@@ -171,13 +163,13 @@ To create an entity and attributes, follow these steps:
 
 3. Create and configure attributes:
 
-   a. Click the **Parts** entity, click **New attribute**, and create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.
+   a. Select the **Parts** entity, click **New attribute**, and create the following part attributes: *Name*, *Code*, *Stock*, *SafetyStock*, *OptimumStock*, *Location*, and *Notes*.
    
    {{% alert type="info" %}}
    The name of an attribute should start with a letter and can only contain letters, digits, and underscores.
    {{% /alert %}}
    
-   b. Click an attribute and go to the **Properties** tab to configure the properties.
+   b. Select an attribute and go to the **Properties** tab to configure the properties.
    
 4. Ensure that the *Parts* entity is persistable (refer [Persistability](https://docs.mendix.com/refguide/persistability)):
    * Click at the top of **Parts** entity box, go to the **Properties** tab, and make sure the **Persistable** switch is turned on.
@@ -200,7 +192,7 @@ To configure the *New* button for adding a new part to the parts list, follow th
 
    a. In the **Events** section, go to **Entity** > click **Select entity**.<br/>
    
-   b. In the **Select Entity** pop-up window, choose **Parts**.
+   b. In the **Select Entity** pop-up window, choose the **Parts** entity.
 
 3. Create a page to open and fill the part details:<br/>
    
@@ -208,21 +200,23 @@ To configure the *New* button for adding a new part to the parts list, follow th
    
    d. In the **Select Page** pop-up window, click **New Page**.<br/>
    
-   e. In the **Create new page** pop-up window, create a new page titled *Part details*, and choose **PopupLayout** from the **Layout** drop-down list.<br/>
-   
-   f. Ensure that the checkbox *Pre-fill page contents based on the Parts entity* is selected. This will pre-fill the page contents with part attributes you have created in the *Parts* entity.<br/>
-   
-   f. Choose **Form Horizontal** and click **Create**. A new pop-up page (form) titled *Part details* will be created.
+   e. In the **Create new page** pop-up window, do the following:
+      * **Title**  - enter *Part details*
+      * **Layout** - choose **PopupLayout**
+      * Ensure that the checkbox *Pre-fill page contents based on the Parts entity* is selected. This will pre-fill the page contents with part attributes you have created in the *Parts* entity.
+      * Click **Create**.
+      * **Forms** - choose **Form Horizontal**
+      * Click **Create**
 
 4. Configure the user interaction elements inside the *Part details* page:<br/>
 
    a. Ensure that the data source for contents inside the page is set to **Context**:<br/>
    
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/part-details-page-data-source.gif?raw=true)
+   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/part-details-page-data-source.gif?raw=true)<br/>
    
    b. Set the **Name** text box as *Required* to make the part name as necessary to add a part to the parts list:<br/>
    
-      * Click the **Name** text box, go to the **Properties** tab > **Input Validation** section > **Validation Type** > choose **Required**.<br/>
+      * Select the **Name** text box, go to the **Properties** tab > **Input Validation** section > **Validation Type** > choose **Required**.<br/>
       
    c. Configure other properties such as design, appearance, spacing, and alignment, if necessary.
    
@@ -240,7 +234,9 @@ To configure the *New* button for adding a new part to the parts list, follow th
    
    d. In the **Select Microflow** pop-up window, click **New Microflow**.<br/>
    
-   e. In the **Create new microflow** pop-up window, create a new microflow named *AddEditPart* and click **Create**. The *AddEditPart* microflow will open in the **Microflows** window in Mendix Studio.
+   e. In the **Create new microflow** pop-up window, do the following:
+      * **Name** - enter *AddEditPart*
+      * Click **Create**.
    
 ### 6.3 Configuring a Microflow
 
@@ -261,7 +257,7 @@ To configure the *AddEditPart* microflow, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/add-change-object-in-microflow.gif?raw=true)<br/>
    
-   b. In the microflow diagram, click **Change object** and go to the **Properties** tab > **Data Source** section > **Object** > drop-down **Select object** > choose **Parts**.<br/>
+   b. In the microflow diagram, select the **Change object** activity and go to the **Properties** tab > **Data Source** section > **Object** > drop-down **Select object** > choose **Parts**.<br/>
    
    c. In the **Data Source** section, go to **Change Members** > click **Add New Value**.<br/>
    
@@ -269,7 +265,7 @@ To configure the *AddEditPart* microflow, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/microflow-add-new-value.gif?raw=true)<br/>
    
-   e. Repeat the steps from *c* to *d* till you add all the attributes you may want to change while editing the part details.<br/>
+   e. Repeat steps from c to d till you add all the attributes you may want to change while editing the part details.<br/>
    
    f. Go to the **Properties** tab > **Behavior** section > **Commit** and make sure to choose **Yes**, and turn the **Refresh in Client** switch on. This behavior sets an event to commit and display the changes in parts list.
 
@@ -280,7 +276,7 @@ To configure the *AddEditPart* microflow, follow these steps:
 
    a. Go to the **Toolbox** tab > **Client Activities** section > drag and drop the **Show Message** activity in microflow after the **Close Page** activity.<br/>
    
-   b. In the microflow diagram, click **Show Message** and go to the **Properties** tab > **Data Source** section > **Template** > enter *Part saved successfully* and turn the **Blocking** switch on. This microflow sets an event to display the save confirmation message and block the user from interacting with other user interaction elements on the *Parts* page.
+   b. In the microflow diagram, select the **Show Message** activity and go to the **Properties** tab > **Data Source** section > **Template** > enter *Part saved successfully* and turn the **Blocking** switch on. This microflow sets an event to display the save confirmation message and block the user from interacting with other user interaction elements on the *Parts* page.
 
 The configured microflow may look similar to the following microflow. To understand more about the parameters and events displayed in the following microflow, refer [Microflows](https://docs.mendix.com/studio/microflows):
 
@@ -298,7 +294,7 @@ In the **Events** section, do not turn the **Create Object** switch on and selec
 
 2. In the **Events** section, go to **Page** > click **Select page**.<br/>
 
-3. In the **Select Page** pop-up window, choose **Part details**.<br/>
+3. In the **Select Page** pop-up window, choose the **Part details** page.<br/>
 
 ### 6.5 Configuring the Delete Button
 
@@ -314,9 +310,9 @@ To configure the search feature for searching a part from the parts list, follow
 
 1. Choose an entity:<br/>
 
-   a. Click the **Search** box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
+   a. Select the search box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
    
-   b. In the **Select Entity** pop-up window, choose **Parts**.
+   b. In the **Select Entity** pop-up window, choose the **Parts** entity.
    
 2. Choose the part attribute you want to search using the searh box:<br/>
 
@@ -327,7 +323,7 @@ To configure the search feature for searching a part from the parts list, follow
    c. In the **Select Attribute** pop-up window, choose **Name** and click **Select**.
 
 3. Choose a placeholder to hint that the part name can be used for searching:
-   * Go to the **Properties** tab > **General** section > **Placeholder** > enter *Search part*.<br/>
+   * Go to the **Properties** tab > **General** section > **Placeholder** > enter *Search part*.
    
 ### 6.7 Configuring the Sort Feature
 
@@ -335,21 +331,26 @@ To configure the sort feature for sorting parts list, follow these steps:
 
 1. Choose an entity:<br/>
 
-   a. Click the sort box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
+   a. Select the sort box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
    
-   b. In the **Select Entity** pop-up window, choose **Parts**.
+   b. In the **Select Entity** pop-up window, choose the **Parts** entity.
    
-2. Choose the sort options you want to add to the sort drop-down list:<br/>
+2. Choose the sort options that you want to add to the sort drop-down list:<br/>
 
    a. Go to the **Properties** tab > **General** section > **Sort Options** > click **Add**.<br/>
    
-   b. In the **Add Object Property** pop-up window, enter *Sort by name* as caption, choose the **Name** attribute, choose a sort order.<br/>
+   b. In the **Add Object Property** pop-up window, do the following: 
+      * **Caption** - enter *Sort by name*
+      * **Attribute** - choose **Name**
+      * **Sort Order** - choose **Ascending**
+      * **Default Selected** - turn the switch on
+      * Click **Done**
    
-   e. Turn the **Default Selected** switch on to make this sort option displayed and selected by default.<br/>
-   
-   f. Click **Done**.
-   
-3. Repeat the step *2* to add *Sort by stock* as a sort option to the sort drop-down list.
+   c. Repeat step a and in the **Add Object Property** pop-up window, do the following:
+      * **Caption** - enter *Sort by stock*
+      * **Attribute** - choose **Stock**
+      * **Sort Order** - choose **Ascending**
+      * Click **Done**
 
 ### 6.8 Configuring the Filter Feature
 
@@ -357,7 +358,7 @@ To configure the filter feature for filtering parts from the list, follow these 
 
 1. Choose an entity:<br/>
 
-   a. Click the filter box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
+   a. Select the filter box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
    
    b. In the **Select Entity** pop-up window, choose **Parts**.
    
@@ -368,36 +369,59 @@ To configure the filter feature for filtering parts from the list, follow these 
    b. In the **Add Object Property** pop-up window, do the following: 
       * **Caption** - enter *Filter none*
       * **Filter** - choose **None**
-      * **Selected by Default** - turn on
+      * **Selected by Default** - turn the switch on
       * Click **Done**
    
-   c. Repeat the step *a* and in the **Add Object Property** pop-up window, do the following:
+   c. Repeat step a and in the **Add Object Property** pop-up window, do the following:
       * **Caption** - enter *Filter empty stock*
       * **Filter** - choose **XPath**
       * **Attribute** - choose **Stock**
       * **XPath Constraint** - add condition where attribute value of **Stock** is equal to **0**.
       * Click **Done**
       
-   d. Repeat the step *a* and in the **Add Object Property** pop-up window, do the following:
+   d. Repeat step a and in the **Add Object Property** pop-up window, do the following:
       * **Caption** - enter *Filter stock reached safety stock*
       * **Filter** - choose **XPath**
       * **Attribute** - choose **Stock**
       * **XPath Constraint** - add condition where attribute value of **Stock** is less than or equal to attribute value of **SafetyStock**.
       * Click **Done*
       
-### 6.9 Configuring Contents in the Parts List
+### 6.9 Configuring the Contents of Parts List
 
-To configure contents in the parts list for displaying the part attributes, follow these steps:
+To configure the contents of parts list for displaying the part attributes, follow these steps:
 
-1. In the parts list, click the **Name** text, go to the **Properties** tab > **General** section > **Content** > delete the *Name* text > click **Add attribute**.<br/>
+1. In the parts list, select the **Name** text, go to the **Properties** tab > **General** section > **Content** > delete the *Name* text > click **Add attribute**.<br/>
    
-2. In the **Select Attribute** pop-up window, choose the **Name** attribute to display.<br/>
+2. In the **Select Attribute** pop-up window, choose the **Name** attribute.<br/>
    
-3. In the parts list, click the **Stock:** text and choose the **Stock** attribute to display.<br/>
+3. In the parts list, select the **Stock:** text and choose the **Stock** attribute.<br/>
+
+### 6.10 Configuring the Back Button
+
+To configure the back button for going back to the *Home* page, follow these steps:
+
+1. Click the **Back** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page** > click **Select page**.<br/>
+   
+2. In the **Select Page** pop-up window, choose the **Home** page.<br/>
 
 Now the configured *Parts* page may look similar to the following UI page:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/parts-page-complete.png?raw=true)
+
+Now that all the UI pages and user interaction elements are configured, your [Tracker](https://tw1020-sandbox.mxapps.io/index.html) app is ready for preview.
+
+## 7 Fixing an Error Message
+
+You cannot preview and publish your app without fixing the error messages. If your app has errors, the Mendix Studio displays the number of errors in the red colored **Checks** button located in the header bar at top right corner.
+
+To fix an error message, follow these steps:
+
+1. In Mendix Studio, go to the header bar and click **Checks**. The error messages displays in the bottom pane.
+
+2. Read the error message, identify the document and element to understand the error.
+
+3. Click the error message to open it.
+
 
 ## 4 Read More
 
