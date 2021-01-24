@@ -1,10 +1,10 @@
 ---
 title: "Create your own Tracker app in a browser using Mendix Studio"
-#category: "Apps"
-#parent: "Mendix"
-#menu_order: 10
-#description: "Describes how to create an app in a browser using Mendix Studio."
-#tags: ["studio", "apps", "create app", "how to"]
+category: "Apps"
+parent: "Mendix"
+menu_order: 10
+description: "Describes how to create an app in a browser using Mendix Studio."
+tags: ["studio", "apps", "create tracker app", "how to"]
 #If moving or renaming this doc file, implement a temporary redirect and let the respective team know they should update the URL in the product. See Mapping to Products for more details.
 ---
 
@@ -13,23 +13,24 @@ title: "Create your own Tracker app in a browser using Mendix Studio"
 This how-to explains how you can create your own Tracker app in a browser using Mendix Studio. The Tracker app can be used for keeping track of everything from
 office supplies to warehouse stock.
 
-This how-to assumes the following use case:
+This how-to assumes the following business use case:
 
 * You want to keep a track of parts that you use in your workshop to repair and maintain customer bikes 
 * You have a warehouse where you keep the parts in a specific location allocated for each part
 * You want to add a new part and edit the stock and part details
-* You want to control the stock
+* You want to control the parts stock via an app
 
 **This how-to will teach you how to do the following:**
 
-* Create the Tracker app and start editing in Mendix Studio (see section [3](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#3-creating-a-tracker-app-and-editing-in-mendix-studio))
-* Configure an action card on the Home page to open the parts list
-* Create a new page for displaying the parts list (see section [4](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#4-configuring-an-action-card-and-creating-a-new-page-for-parts-list))
-* Configure the new page to display the parts list
-* Create an entity and add part attributes. This entity with part attributes acts as a data source for the pages you create.
-* Create and configure buttons, pages, and microflows to add a new part, edit stock, and delete a part from the parts list
-* Create features such as search, sort, and filter for better user experience
-* Resolve errors, preview, and publish the Tracker app
+* Create the Tracker app and start editing in Mendix Studio
+* Configure the app *Home* page to open the parts list
+* Create new *Parts* page to display the parts list
+* Configure the user interface (UI) of *Parts* page 
+* Configure the user interaction elements of *Parts* page
+  * Create an entity and add attributes. This entity with attributes acts as a data source for the pages and events you create.
+  * Create and configure buttons, pages, and microflows to add a new part, edit stock, and delete a part from the parts list
+  * Create features such as search, sort, and filter to control the parts stock
+* Fix an error in your app
 
 ## 2 Prerequisites
 
@@ -51,13 +52,13 @@ To create and edit the Tracker app, follow these steps:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/3/edit-in-studio.gif)
 
-## 4 Configuring an Action Card and Creating the Parts Page
+## 4 Configuring the Home Page and Creating the Parts Page
 
-You can configure the User Interface (UI) and user interaction elements of a page in your app using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. To get yourself familiarize with *Pages* and *Widgets* in Mendix Studio, refer [Pages](https://docs.mendix.com/studio-how-to/pages) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
+You can configure the user interface (UI) and user interaction elements of a page in your app using **Widgets** and **Building Blocks** (set of widgets). Go to the **Toolbox** tab to access the **Widgets** and **Building Blocks** and go to the **Properties** tab to configure an event or appearance of a widget. To get yourself familiarize with *Pages* and *Widgets* in Mendix Studio, refer [Pages](https://docs.mendix.com/studio-how-to/pages) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
-To configure an action card and create the *Parts* page, follow these steps:
+To configure the *Home* page and create the *Parts* page, follow these steps:
 
-1. In the *Home* page, choose an action card:
+1. In the *Home* page, create an action card:
    * Go to the **Toolbox** tab > search for *cards* > drag and drop the **Card Action** card at the bottom of the *Home* page.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
@@ -73,7 +74,7 @@ To configure an action card and create the *Parts* page, follow these steps:
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
 5. Choose an event for the click action:
-   * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. Choosing the **Page** event will set an action to open the *Parts* page you will create in the next step.
+   * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page you will create in the next step.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
 
@@ -87,11 +88,11 @@ To configure an action card and create the *Parts* page, follow these steps:
       * **Title**  - enter *Parts*
       * **Layout** - choose **Atlas_Default**
       * In the left pane, choose **Lists** > **List Default**
-      * Click **Create**.
+      * Click **Create**
    
-## 5 Configuring the UI Elements of Parts Page
+## 5 Configuring the UI of Parts Page
 
-To configure the UI elements of *Parts* page, follow these steps:
+To configure the UI of *Parts* page, follow these steps:
 
 1. Open the *Parts* page:
    * Click the **Pages** icon in the left menu bar and select **Parts**.
@@ -127,7 +128,7 @@ To configure the UI elements of *Parts* page, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/rearrange-button.gif?raw=true)
 
-7. Add UI elements for deleting, searching, sorting, and filtering parts from the parts list:<br/>
+7. Create user interaction elements for deleting, searching, sorting, and filtering parts from the parts list:<br/>
 
    a. Copy and paste an existing button, rename it as *Delete*, and go to the **Properties** tab to configure the design, appearance, and spacing.<br/>
    
@@ -137,13 +138,13 @@ To configure the UI elements of *Parts* page, follow these steps:
    
    d. Add a column right to the sort box, go to the **Toolbox** tab > search for *filter* widget > drag and drop the **Drop down filter** widget inside the column.
    
-8. Add a back button for going back to the *Home* page:<br/>
+8. Create a back button for going back to the *Home* page:<br/>
 
    a. Copy and paste an existing button and rename it as *Back*.<br/>
    
    b. Drag and drop it inside the row at top left corner and configure the design, appearance, and spacing, if necessary.<br/>
    
-The configured *Parts* page may look similar to the following UI page:
+The configured UI of *Parts* page may look similar to the following UI page:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-page.png?raw=true)
    
@@ -314,7 +315,7 @@ To configure the search feature for searching a part from the parts list, follow
    
    b. In the **Select Entity** pop-up window, choose the **Parts** entity.
    
-2. Choose the part attribute you want to search using the searh box:<br/>
+2. Choose the part attribute that you want to search using the searh box:<br/>
 
    a. Go to the **Properties** tab > **General** section > **Search Attributes** > click **Add**.<br/>
    
@@ -362,7 +363,7 @@ To configure the filter feature for filtering parts from the list, follow these 
    
    b. In the **Select Entity** pop-up window, choose **Parts**.
    
-2. Choose the filter options you want to add to the filter drop-down list:<br/>
+2. Choose the filter options that you want to add to the filter drop-down list:<br/>
 
    a. Go to the **Properties** tab > **General** section > **Filter Options** > click **Add**.<br/>
    
@@ -408,8 +409,6 @@ Now the configured *Parts* page may look similar to the following UI page:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/parts-page-complete.png?raw=true)
 
-Now that all the UI pages and user interaction elements are configured, your [Tracker](https://tw1020-sandbox.mxapps.io/index.html) app is ready for preview.
-
 ## 7 Fixing an Error Message
 
 You cannot preview and publish your app without fixing the error messages. If your app has errors, the Mendix Studio displays the number of errors in the red colored **Checks** button located in the header bar at top right corner.
@@ -418,14 +417,10 @@ To fix an error message, follow these steps:
 
 1. In Mendix Studio, go to the header bar and click **Checks**. The error messages displays in the bottom pane.
 
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/7/error-messages.gif?raw=true)
+
 2. Read the error message, identify the document and element to understand the error.
 
-3. Click the error message to open it.
+3. Click the error message to locate it.
 
-
-## 4 Read More
-
-* {Link 1}
-* {Link2} – {an explanation when necessary especially if this is a third-party link}
-
-{Make sure this section contains a bulleted list only with explanations where necessary. Do not just repeat cross-references you used throughout the document, but list useful supplementary links here.}
+Now that all the UI pages, user interaction elements are configured, and the error messages have been fixed, your [Tracker](https://tw1020-sandbox.mxapps.io/index.html) app is ready for previewing and publishing.
