@@ -243,7 +243,7 @@ To configure the *New* button for adding a new part to the parts list, follow th
 Your app will not function without logic and data activities. The logical events such as start, end, decision, merge, and activities such as create, change, retrieve can be created by creating visualized flow diagrams called *Microflows* in the Mendix Studio. To get yourself familiarize with *Microflows*, refer [Microflows](https://docs.mendix.com/studio-how-to/microflows).
 
 {{% alert type="info" %}}
-The primary objective of creating this microflow is to change (edit) the part details and display the *Part saved successfully* confirmation message to the user. As this microflow contains a save confirmation message, it can also be used as event to display the save confirmation message while adding a new part to the parts list. 
+The primary objective of creating this microflow is to change (edit) the part details and display the *Part saved successfully* confirmation message. As this microflow contains a save confirmation message, it can also be used as event to display the save confirmation message while adding a new part to the parts list. 
 {{% /alert %}}
 
 To configure the *AddEditPart* microflow, follow these steps:
@@ -253,7 +253,7 @@ To configure the *AddEditPart* microflow, follow these steps:
    
 2. Create and configure a change object activity for editing and saving the part details:<br/>
 
-   a. Go to the **Toolbox** tab > **Object Activities** section > drag and drop the **Change Object** activity in microflow between the start (green dot) and end (red dot) events.<br/>
+   a. Go to the **Toolbox** tab > **Object Activities** section > drag and drop the **Change Object** activity to the microflow between the start (green dot) and end (red dot) events.<br/>
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/add-change-object-in-microflow.gif?raw=true)<br/>
    
@@ -270,13 +270,13 @@ To configure the *AddEditPart* microflow, follow these steps:
    f. Go to the **Properties** tab > **Behavior** section > **Commit** and make sure to choose **Yes**, and turn the **Refresh in Client** switch on. This behavior sets an event to commit and display the changes in parts list.
 
 3. Create a close page activity for closing the *Part details* page after saving the changes:
-   * Go to the **Toolbox** tab > **Client Activities** section > drag and drop the **Close Page** activity in microflow after the **Change object** activity.
+   * Go to the **Toolbox** tab > **Client Activities** section > drag and drop the **Close Page** activity to the microflow after the **Change object** activity.
    
 4. Create and configure a show message activity for displaying a save confirmation message:<br/>
 
-   a. Go to the **Toolbox** tab > **Client Activities** section > drag and drop the **Show Message** activity in microflow after the **Close Page** activity.<br/>
+   a. Go to the **Toolbox** tab > **Client Activities** section > drag and drop the **Show Message** activity to the microflow after the **Close Page** activity.<br/>
    
-   b. In the microflow diagram, select the **Show Message** activity and go to the **Properties** tab > **Data Source** section > **Template** > enter *Part saved successfully* and turn the **Blocking** switch on. This microflow sets an event to display the save confirmation message and block the user from interacting with other user interaction elements on the *Parts* page.
+   b. In the microflow diagram, select the **Show Message** activity and go to the **Properties** tab > **Data Source** section > **Template** > enter *Part saved successfully* and turn the **Blocking** switch on. This microflow sets an event to display the save confirmation message and block you from interacting with other user interaction elements on the *Parts* page.
 
 The configured microflow may look similar to the following microflow. To understand more about the parameters and events displayed in the following microflow, refer [Microflows](https://docs.mendix.com/studio/microflows):
 
@@ -302,7 +302,7 @@ To configure the *Delete* button for deleting a part from the parts list, follow
 
 1. Click the **Delete** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **More**.<br/>
 
-2. In the **Events** section, go to **Action** > choose **Delete Object** from the drop-down list. This event sets an action to display a dialogue box prompting the user to confirm the delete action.
+2. In the **Events** section, go to **Action** > choose **Delete Object** from the drop-down list. This event sets an action to display a dialogue box prompting you to confirm the delete action.
 
 ### 6.6 Configuring the Search Feature
 
