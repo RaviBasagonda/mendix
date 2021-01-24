@@ -33,7 +33,7 @@ This how-to assumes the following business use case:
 
 ## 2 Prerequisites
 
-Before starting this how-to, make sure that you have completed the following prerequisites:
+Before starting this how-to, make sure that you have the following prerequisites:
 
 * Have a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
@@ -54,31 +54,33 @@ To create and start editing the Tracker app in Mendix Studio, follow these steps
 
 ## 4 Configuring the Home Page and Creating the Parts Page
 
-You can configure the user interface (UI) and user interaction elements of a page in your app using **Widgets** and **Building Blocks** (set of widgets). You can access the **Widgets** and **Building Blocks** from the **Toolbox** tab, and can configure them from the **Properties** tab. To get yourself familiarize with *Pages* and *Widgets* in Mendix Studio, refer [Pages](https://docs.mendix.com/studio-how-to/pages) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
+You can configure the user interface (UI) and user interaction elements of a page in your app using **Widgets** and **Building Blocks** (set of widgets). You can access the **Widgets** and **Building Blocks** from the **Toolbox** tab and can configure them from the **Properties** tab. To get yourself familiarize with *Pages* and *Widgets*, refer [Pages](https://docs.mendix.com/studio-how-to/pages) and [Widgets](https://docs.mendix.com/studio/page-editor-widgets).
 
 To configure the *Home* page and create the *Parts* page, follow these steps:
 
-1. In the *Home* page, create an action card:
+1. In the *Home* page, create an action card for opening the *Parts* page:
    * Go to the **Toolbox** tab > search for *cards* > drag and drop the **Card Action** card at the bottom of the *Home* page.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/create-action-card.gif?raw=true)
 
-2. Choose an icon for the action card:
-   * Select the icon in the action card and go to the **Properties** tab > **General** section > **Icon** > click **Select icon** > choose an icon > click **Select**.
-   
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/select-icon-action-card.gif?raw=true)
-   
-3. Choose a caption for the action card:
-   * Select the **Open Page** caption in the action card and go to the **Properties** tab > **General** section > **Caption** > enter *Parts*.
-   
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
-   
-4. Choose an event for the click action:
-   * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page that you will create in the next step.
-   
-   ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
+2. Configure the action card:<br/>
 
-5. Create the *Parts* page:<br/>
+   a. Choose an icon for the action card:
+      * Select the icon in the action card and go to the **Properties** tab > **General** section > **Icon** > click **Select icon** > choose an icon > click **Select**.<br/>
+      
+      ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/select-icon-action-card.gif?raw=true)
+   
+   b. Choose a caption for the action card:
+      * Select the **Open Page** caption in the action card and go to the **Properties** tab > **General** section > **Caption** > enter *Parts*.<br/>
+      
+      ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
+   
+   c. Choose an event to happen after clicking the action card:
+      * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page that you will create in the next step.
+      
+      ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
+
+3. Create the *Parts* page:<br/>
 
    a. In the **Events** section, go to **Page** > click **Select page**.<br/>
    
