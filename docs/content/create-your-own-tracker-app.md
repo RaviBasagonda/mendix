@@ -75,7 +75,7 @@ To configure the *Home* page and create the *Parts* page, follow these steps:
       
       ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
-   c. Choose an event to happen for clicking the action card:
+   c. Set an event to happen for clicking the action card:
       * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page that you will create in the next step.
       
       ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
@@ -177,15 +177,15 @@ To create an entity and attributes, follow these steps:
 4. Ensure that the *Parts* entity is persistable (refer [Persistability](https://docs.mendix.com/refguide/persistability)):
    * Click at the top of **Parts** entity box, go to the **Properties** tab, and make sure that the **Persistable** switch is turned on.
    
-The created entity named *Parts* may look like the following entity:
+The created *Parts* entity may look like the following entity:
 
-![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-entity.png?raw=true)
+![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-entity-2.png?raw=true)
 
 ### 6.2 Configuring the New Button
 
 To configure the *New* button for adding a new part to the parts list, follow these steps:
 
-1. Set an event to open a page and create a new part in the part database:<br/>
+1. Set an event to open a page:<br/>
 
    a. Click the **New** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**.<br/>
    
@@ -210,7 +210,7 @@ To configure the *New* button for adding a new part to the parts list, follow th
       * **Forms** - choose **Form Horizontal**
       * Click **Create**
 
-4. Configure the user interaction elements inside the *Part details* page:<br/>
+4. Configure the user input elements inside the *Part details* page:<br/>
 
    a. Ensure that the data source for contents inside the page is set to **Context**:<br/>
    
@@ -219,8 +219,6 @@ To configure the *New* button for adding a new part to the parts list, follow th
    b. Set the **Name** text box as *Required* to make the part name as necessary to add a part to the parts list:<br/>
    
       * Select the **Name** text box, go to the **Properties** tab > **Input Validation** section > **Validation Type** > choose **Required**.<br/>
-      
-   c. Configure other properties such as design, appearance, spacing, and alignment, if necessary.
    
 5. Ensure that the action event for the **Cancel** button is set to cancel the changes made to the page while adding or editing a part detail:<br/>
 
@@ -242,7 +240,7 @@ To configure the *New* button for adding a new part to the parts list, follow th
    
 ### 6.3 Configuring a Microflow
 
-Your app will not function without logic and data activities. You can create logical events such as decision and merge, and activities such as create, change, and retrieve by creating visualized flow diagrams called *Microflows* in the Mendix Studio. To get yourself familiarize with *Microflows*, refer [Microflows](https://docs.mendix.com/studio-how-to/microflows).
+Your app will not function without logic and data activities. You can create logical events such as decision and merge, and activities such as create, change, and retrieve by creating visualized flow diagrams called *Microflows*. To get yourself familiarize with *Microflows*, refer [Microflows](https://docs.mendix.com/studio-how-to/microflows).
 
 {{% alert type="info" %}}
 The primary aim of creating this microflow is to change (edit) the part details and display the *Part saved successfully* confirmation message. As this microflow contains a save confirmation message, you can also use this microflow to display the save confirmation message for adding a new part to the parts list. 
@@ -255,7 +253,7 @@ To configure the *AddEditPart* microflow, follow these steps:
    
 2. Create and configure a change object activity for editing and saving the part details:<br/>
 
-   a. Go to the **Toolbox** tab > **Object Activities** section > drag and drop the **Change Object** activity to the microflow between the start (green dot) and end (red dot) events.<br/>
+   a. Go to the **Toolbox** tab > **Object Activities** section > drag and drop the **Change Object** activity to the microflow.<br/>
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/add-change-object-in-microflow.gif?raw=true)<br/>
    
@@ -263,11 +261,11 @@ To configure the *AddEditPart* microflow, follow these steps:
    
    c. In the **Data Source** section, go to **Change Members** > click **Add New Value**.<br/>
    
-   d. In the **Change value** pop-up window, select the part attribute that you prefer to change, and click **Add**.<br/>
+   d. In the **Change value** pop-up window, select the part attribute that you prefer to edit, and click **Add**.<br/>
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/microflow-add-new-value.gif?raw=true)<br/>
    
-   e. Repeat steps from c to d till you add all the part attributes that you prefer to change while editing the part details.<br/>
+   e. Repeat steps from c to d till you add all the part attributes that you prefer to edit while editing the part details.<br/>
    
    f. Go to the **Properties** tab > **Behavior** section > **Commit** and make sure to choose **Yes**, and turn the **Refresh in Client** switch on. This behavior sets an event to save and display the changes in parts list.
 
@@ -329,7 +327,7 @@ To configure the search feature for searching a part from the parts list, follow
    
 ### 6.7 Configuring the Sort Feature
 
-To configure the sort feature for sorting parts list, follow these steps:
+To configure the sort feature for sorting the parts list, follow these steps:
 
 1. Choose an entity:<br/>
 
@@ -337,7 +335,7 @@ To configure the sort feature for sorting parts list, follow these steps:
    
    b. In the **Select Entity** pop-up window, choose the **Parts** entity.
    
-2. Choose the sort options that you want to add to the sort drop-down list:<br/>
+2. Create sort options that you want to add to the sort drop-down list:<br/>
 
    a. Go to the **Properties** tab > **General** section > **Sort Options** > click **Add**.<br/>
    
@@ -362,9 +360,9 @@ To configure the filter feature for filtering parts from the list, follow these 
 
    a. Select the filter box, go to the **Properties** tab > **General** section > **List View With Entity** > click **Select entity**.<br/>
    
-   b. In the **Select Entity** pop-up window, choose **Parts**.
+   b. In the **Select Entity** pop-up window, choose the **Parts** entity.
    
-2. Choose the filter options that you want to add to the filter drop-down list:<br/>
+2. Create the filter options that you want to add to the filter drop-down list:<br/>
 
    a. Go to the **Properties** tab > **General** section > **Filter Options** > click **Add**.<br/>
    
@@ -406,7 +404,7 @@ To configure the back button for going back to the *Home* page, follow these ste
    
 2. In the **Select Page** pop-up window, choose the **Home** page.<br/>
 
-Now the configured *Parts* page may look like to the following UI page:
+Now the configured *Parts* page may look like the following UI page:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/6/parts-page-complete.png?raw=true)
 
@@ -416,12 +414,12 @@ You cannot preview and publish your app without fixing the error messages. If yo
 
 To fix an error message, follow these steps:
 
-1. In Mendix Studio, go to the header bar and click **Checks**. The error messages displays in the bottom pane.
+1. In Mendix Studio, go to the header bar and click **Checks**. The error messages display in the bottom pane.
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/7/error-messages.gif?raw=true)
 
-2. Read the error message, identify the document and element to understand the error.
+2. Read an error message, identify the document and element to understand the error.
 
-3. Click the error message to locate it.
+3. Select an error message to locate it.
 
-Now that all the UI pages, user interaction elements are configured, and the error messages have been fixed, your [Tracker](https://tw1020-sandbox.mxapps.io/index.html) app is ready for previewing and publishing.
+Now that all the UI pages, user interaction and input elements are configured, and the error messages have been fixed, your [Tracker](https://tw1020-sandbox.mxapps.io/index.html) app is ready for previewing and publishing.
