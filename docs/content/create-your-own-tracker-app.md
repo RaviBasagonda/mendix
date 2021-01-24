@@ -1,5 +1,5 @@
 ---
-title: "Create your own Tracker app in a browser using Mendix Studio"
+title: "Create your own Tracker app using Mendix Studio"
 category: "Apps"
 parent: "Mendix"
 menu_order: 10
@@ -10,7 +10,7 @@ tags: ["studio", "apps", "create tracker app", "how to"]
 
 ## 1 Introduction
 
-This how-to explains how you can create your own Tracker app in a browser using Mendix Studio. The Tracker app can be used for keeping track of everything from
+This how-to explains how you can create your own Tracker app using Mendix Studio. The Tracker app can be used for keeping track of everything from
 office supplies to warehouse stock.
 
 This how-to assumes the following business use case:
@@ -34,7 +34,7 @@ This how-to assumes the following business use case:
 
 ## 2 Prerequisites
 
-Before starting this how-to, make sure you have completed the following prerequisites:
+Before starting this how-to, make sure that you have completed the following prerequisites:
 
 * Have a Mendix account. If you do not have a Mendix account, go to [Mendix.com](https://www.mendix.com/) and click **Start for free** to create an account.
 
@@ -74,7 +74,7 @@ To configure the *Home* page and create the *Parts* page, follow these steps:
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
 5. Choose an event for the click action:
-   * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page you will create in the next step.
+   * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page that you will create in the next step.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
 
@@ -197,15 +197,14 @@ To configure the *New* button for adding a new part to the parts list, follow th
 
 3. Create a page to open and fill the part details:<br/>
    
-   c. In the **Events** section, go to **Page** > click **Select page**.<br/>
+   a. In the **Events** section, go to **Page** > click **Select page**.<br/>
    
-   d. In the **Select Page** pop-up window, click **New Page**.<br/>
+   b. In the **Select Page** pop-up window, click **New Page**.<br/>
    
-   e. In the **Create new page** pop-up window, do the following:
+   c. In the **Create new page** pop-up window, do the following:
       * **Title**  - enter *Part details*
       * **Layout** - choose **PopupLayout**
-      * Ensure that the checkbox *Pre-fill page contents based on the Parts entity* is selected. This will pre-fill the page contents with part attributes you have created in the *Parts* entity.
-      * Click **Create**.
+      * Ensure that the checkbox *Pre-fill page contents based on the Parts entity* is selected. This will pre-fill the page contents with part attributes that you have created in the *Parts* entity.
       * **Forms** - choose **Form Horizontal**
       * Click **Create**
 
@@ -231,13 +230,13 @@ To configure the *New* button for adding a new part to the parts list, follow th
 
    a. Click the **Save** button, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Microflow**.<br/>
    
-   c. In the **Events** section, go to **Microflow** > click **Select microflow**.<br/>
+   b. In the **Events** section, go to **Microflow** > click **Select microflow**.<br/>
    
-   d. In the **Select Microflow** pop-up window, click **New Microflow**.<br/>
+   c. In the **Select Microflow** pop-up window, click **New Microflow**.<br/>
    
-   e. In the **Create new microflow** pop-up window, do the following:
+   d. In the **Create new microflow** pop-up window, do the following:
       * **Name** - enter *AddEditPart*
-      * Click **Create**.
+      * Click **Create**
    
 ### 6.3 Configuring a Microflow
 
@@ -385,7 +384,7 @@ To configure the filter feature for filtering parts from the list, follow these 
       * **Filter** - choose **XPath**
       * **Attribute** - choose **Stock**
       * **XPath Constraint** - add condition where attribute value of **Stock** is less than or equal to attribute value of **SafetyStock**.
-      * Click **Done*
+      * Click **Done**
       
 ### 6.9 Configuring the Contents of Parts List
 
@@ -395,7 +394,7 @@ To configure the contents of parts list for displaying the part attributes, foll
    
 2. In the **Select Attribute** pop-up window, choose the **Name** attribute.<br/>
    
-3. In the parts list, select the **Stock:** text and choose the **Stock** attribute.<br/>
+3. Repeat steps from 1 to 2 and choose the **Stock** attribute.<br/>
 
 ### 6.10 Configuring the Back Button
 
