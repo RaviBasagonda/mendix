@@ -22,15 +22,15 @@ This how-to assumes the following business use case:
 
 **This how-to will teach you how to do the following:**
 
-* Create the Tracker app and start editing in Mendix Studio
-* Configure the app *Home* page to open the parts list
-* Create new *Parts* page to display the parts list
-* Configure the user interface (UI) of *Parts* page 
-* Configure the user interaction elements of *Parts* page
+* [Create the Tracker app and start editing in Mendix Studio](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#3-creating-the-tracker-app-and-start-editing-in-mendix-studio)
+* [Configure the app *Home* page to open the parts list](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#4-configuring-the-home-page-and-creating-the-parts-page)
+* [Create new *Parts* page to display the parts list](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#4-configuring-the-home-page-and-creating-the-parts-page)
+* [Configure the user interface (UI) of *Parts* page](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#5-configuring-the-ui-of-parts-page) 
+* [Configure the user interaction elements of *Parts* page](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#6-configuring-the-user-interaction-elements-of-parts-page)
   * Create an entity and add attributes. This entity with attributes acts as a data source for the pages and events you create.
   * Create and configure buttons, pages, and microflows to add a new part, edit stock, and delete a part from the parts list
   * Create features such as search, sort, and filter to control the parts stock
-* Fix an error in your app
+* [Fix an error in your app](https://github.com/RaviBasagonda/mendix/blob/main/docs/content/create-your-own-tracker-app.md#7-fixing-an-error-message)
 
 ## 2 Prerequisites
 
