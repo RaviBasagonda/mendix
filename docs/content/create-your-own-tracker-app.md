@@ -75,7 +75,7 @@ To configure the *Home* page and create the *Parts* page, follow these steps:
       
       ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-caption-action-card.gif?raw=true)
    
-   c. Choose an event to happen after clicking the action card:
+   c. Choose an event to happen for clicking the action card:
       * Select the action card, go to the **Properties** tab > **Events** section > **On Click Action** > choose **Page**. This event sets an action to open the *Parts* page that you will create in the next step.
       
       ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/4/4.2/choose-event.gif?raw=true)
@@ -105,7 +105,7 @@ To configure the UI of *Parts* page, follow these steps:
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/delete-elements.gif?raw=true)
    
 3. Set the width of page layout, if necessary:
-   * Select the **Layout Grid**, go to the **Properties** tab > **General** section > choose **Full Width** or **Fixed Width**.
+   * Select **Layout Grid**, go to the **Properties** tab > **General** section > choose **Full Width** or **Fixed Width**.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/adjust-width-layout-grid.gif?raw=true)
    
@@ -114,7 +114,7 @@ To configure the UI of *Parts* page, follow these steps:
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/edit-texts-button-captions.gif?raw=true)
    
-5. Add or delete rows or columns for rearranging the UI elements, if necessary:<br/>
+5. Add rows or columns for rearranging the UI elements, if necessary:<br/>
 
    a. Select an UI element and go to the breadcrumb bar displayed at the left bottom corner.<br/>
    
@@ -126,13 +126,13 @@ To configure the UI of *Parts* page, follow these steps:
 
    a. Drag and drop the **New** button inside a column next to the page title.<br/>
    
-   b. Go to the **Properties** tab > **Design** section to configure the spacing or alignment.
+   b. Go to the **Properties** tab > **Design** section to configure the design, spacing, or alignment.
    
    ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/rearrange-button.gif?raw=true)
 
 7. Create user interaction elements for deleting, searching, sorting, and filtering parts from the parts list:<br/>
 
-   a. Copy and paste an existing button, rename it as *Delete*, and go to the **Properties** tab to configure the appearance or spacing.<br/>
+   a. Copy and paste an existing button, double-click its caption and rename it as *Delete*, and go to the **Properties** tab to configure the design or spacing.<br/>
    
    b. Add a column below the page title, go to the **Toolbox** tab > search for *search* widget > drag and drop the **Text box search** widget inside the column.<br/>
    
@@ -142,9 +142,9 @@ To configure the UI of *Parts* page, follow these steps:
    
 8. Create a back button for going back to the *Home* page:<br/>
 
-   a. Copy and paste an existing button, double-click its caption to rename it as *Back*.<br/>
+   a. Copy and paste an existing button, double-click its caption and rename it as *Back*.<br/>
    
-   b. Drag and drop it inside the row at top left corner and configure the design, appearance, and spacing, if necessary.<br/>
+   b. Drag and drop it inside the row at top left corner and configure the design, appearance, or spacing, if necessary.<br/>
    
 The configured UI of *Parts* page may look like the following UI page:
 
@@ -162,7 +162,7 @@ To create an entity and attributes, follow these steps:
    * Click the **Domain Models** icon in the left menu bar and select **AssetManager**.
    
 2. Create an entity named *Parts*:
-   * Go to the **Toolbox** tab > drag and drop **Entity** inside the main window, name it **Parts**.
+   * Go to the **Toolbox** tab > drag and drop **Entity** inside the main window and name it *Parts*.
 
 3. Create and configure attributes:
 
@@ -177,7 +177,7 @@ To create an entity and attributes, follow these steps:
 4. Ensure that the *Parts* entity is persistable (refer [Persistability](https://docs.mendix.com/refguide/persistability)):
    * Click at the top of **Parts** entity box, go to the **Properties** tab, and make sure that the **Persistable** switch is turned on.
    
-The created entity named *Parts* may look like to the following entity:
+The created entity named *Parts* may look like the following entity:
 
 ![](https://github.com/RaviBasagonda/mendix/blob/main/docs/images/5/parts-entity.png?raw=true)
 
